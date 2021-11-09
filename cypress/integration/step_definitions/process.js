@@ -11,7 +11,8 @@ const selectors = {
     "search box": ".search-key-box",
     "lens": ".search-button",
     "option ad": "._9tla3",
-    "stock": ".product-quantity-tip > :nth-child(1) > span"
+    "stock": ".addcart-result-title",
+    "add to cart": ".product-action > .addcart-wrap > .next-btn"
 }
 
 Given ("I open {string} page", (elementName) =>{
@@ -35,7 +36,7 @@ When("I Click {string} {string}", (elementName, text) => {
 })
 
 Then("I expect have minimun one product in {string}",(elementName) =>{
-    cy.get(selectors[elementName]).should("contain", "158")
+    cy.get(selectors[elementName]).should('contain', '1')
         
 })
 

@@ -9,6 +9,7 @@ Feature: Search in Aliexpress
           And I type "iphone" in the "search box"
           And I Click "lens" Button
           And I Click "option ad" "1"
+          And I Click "add to cart" Button
           Then I expect have minimun one product in "stock"
 
      
