@@ -1,0 +1,35 @@
+{
+  "name": "test_aliexpress",
+  "version": "1.0.0",
+  "description": "testin secon ad from the second results page when searching from iphone on aliexpress that has at least 1 item to be bought",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Pcongote/TestAliexpress.git"
+  },
+  "keywords": [
+    "Search",
+    "aliexpress",
+    "testing"
+  ],
+  "author": "Pablo Congote",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pcongote/TestAliexpress/issues"
+  },
+  "homepage": "https://github.com/Pcongote/TestAliexpress#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "cypress": "^8.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/integration/step_definitions"
+  }
+}
